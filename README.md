@@ -2,7 +2,7 @@
 
 Example sketch with WROOM ESP32 Connecting to IBM Watson IoT Platform. WROOM ESP32 is like common modern ESP32 boards like Adafruit Feather Huzzah32, DO IT ESP32 v1 & generic. In order to use these examples, one needs to :
 
-1. follow our guide to setup WROOM ESP32 dev board on Windows 10
+1. follow our [guide to setup WROOM ESP32 dev board on Windows 10](https://thecustomizewindows.com/2019/02/esp-wroom-32-how-to-setup-esp32-nodemcu-with-arduino-ide/)
 2. install PubSubClient library from Arduino IDE
 3. have IBM Cloud account
 4. one Wi-Fi hotspot with internet connection
