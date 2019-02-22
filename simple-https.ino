@@ -15,6 +15,9 @@
 
 #define USE_SERIAL Serial 
 
+
+// <------- CHANGE PARAMETERS BELOW THIS LINE ------------>
+
 const char* ssid = "your hotspot";
 const char* password = "abcdefgh";
 
@@ -23,6 +26,8 @@ const char* password = "abcdefgh";
 #define DEVICE_ID "your id"
 #define TOKEN "your token"
 #define EVENT "myEvent" 
+
+// <------- CHANGE PARAMETERS ABOVE THIS LINE ------------>
 
 String urlPath = "/api/v0002/device/types/" DEVICE_TYPE "/devices/" DEVICE_ID "/events/" EVENT;
 String urlHost = ORG ".messaging.internetofthings.ibmcloud.com";
