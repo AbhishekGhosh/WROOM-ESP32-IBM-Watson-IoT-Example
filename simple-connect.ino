@@ -13,6 +13,8 @@
 #include <WiFiClient.h>
 #include <PubSubClient.h> 
 
+// <------- CHANGE PARAMETERS BELOW THIS LINE ------------>
+
 const char* ssid = "your hotspot";
 const char* password = "abcdefgh";
 
@@ -20,6 +22,8 @@ const char* password = "abcdefgh";
 #define DEVICE_TYPE "yourtype"
 #define DEVICE_ID "your id"
 #define TOKEN "your token"
+
+// <------- CHANGE PARAMETERS ABOVE THIS LINE ------------>
 
 char server[] = ORG ".messaging.internetofthings.ibmcloud.com";
 char pubTopic[] = "iot-2/evt/status/fmt/json";
