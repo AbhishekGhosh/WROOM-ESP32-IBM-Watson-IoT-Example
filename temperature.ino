@@ -17,13 +17,13 @@
 
 #include <PubSubClient.h> 
 
-const char* ssid = "SamsungGalaxy";
-const char* password = "fkop3288";
+const char* ssid = "your hotspot";
+const char* password = "abcdefgh";
 
-#define ORG "tko2rj"
-#define DEVICE_TYPE "DevBoard"
-#define DEVICE_ID "ESP32"
-#define TOKEN "b(N4qP3@Lx!ydaoiEM"
+#define ORG "abishek678"
+#define DEVICE_TYPE "yourtype"
+#define DEVICE_ID "your id"
+#define TOKEN "your token"
 
 char server[] = ORG ".messaging.internetofthings.ibmcloud.com";
 char pubTopic[] = "iot-2/evt/status/fmt/json";
