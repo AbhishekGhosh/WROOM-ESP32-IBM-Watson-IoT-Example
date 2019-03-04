@@ -10,6 +10,9 @@ Example sketch with WROOM ESP32 Connecting to IBM Watson IoT Platform. WROOM ESP
 
 ![WROOM ESP32 IBM Watson IoT-Example](20190223_020730_2.gif)
 
-Image is of temperature.ino in action. Blue LED blinking as data uploaded to BlueMix. 
+Image is of temperature.ino in action. Blue LED blinking as data uploaded to BlueMix. Below is simple graphing from IBM IoT platform widget :
+
+
+![WROOM ESP32 IBM Watson IoT](abhishek%20ghosh%20ibm.PNG)
 
 
