@@ -20,14 +20,14 @@ unsigned long turnOffDelay = 5000; // turn off LED after this time
 bool ledReady = false; // flag for when button is let go
 bool ledState = false; // for LED is on or not.
 
-const char* ssid = "SamsungGalaxy";
-const char* password = "fkop3288";
+const char* ssid = "your wifi hotspot";
+const char* password = "password of the above";
 
-#define ORG "tko2rj" 
-#define DEVICE_TYPE "DevBoard"
-#define DEVICE_ID "ESP32"
-#define TOKEN "b(N4qP3@Lx!ydaoiEM"
-#define EVENT "myEvent" 
+#define ORG "your org on ibm" 
+#define DEVICE_TYPE "name you given"
+#define DEVICE_ID "name you given"
+#define TOKEN "your token"
+#define EVENT "myEvent" // example
 
 // <------- CHANGE PARAMETERS ABOVE THIS LINE ------------>
 
