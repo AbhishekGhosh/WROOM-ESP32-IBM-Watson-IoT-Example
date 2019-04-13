@@ -16,6 +16,6 @@ Below image is of temperature.ino in action. Blue LED blinking as data uploaded 
 ![WROOM ESP32 IBM Watson IoT](abhishek%20ghosh%20ibm.PNG)
 
 
-Below image is of temperature.ino in action, it is graphing on IBM IoT platform dashboard widget :
+Below image is of PulseSensor/pulse-graphing.ino in action, it is graphing on IBM IoT platform dashboard widget :
 
 ![ESP32 IBM Watson IoT Pulse Sensor](https://thecustomizewindows.com/wp-content/uploads/2019/04/ESP32-Arduino-IBM-Watson-IoT-Pulse-Sensor-Amped.png)
