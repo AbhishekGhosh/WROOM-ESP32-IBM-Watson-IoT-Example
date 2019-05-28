@@ -1,15 +1,18 @@
-// this example will sleep for a defined time, then wake up, connect to Wi-Fi, then upon button press 
-// will send message and sleep
-// during sleep to wake up & send message will need pressing the button twice
-// pushbutton is on GPIO 33 & LED is on GPIO 2 (ESP32 onloard LED is at 2)
+// this example uses two push buttons attached to pin 0, pin 33
+// and one LED attached to pin 2
+// push button attached to pin 0 sends message when is ESP32 is not in sleep, and after sending message puts it in to sleep
+// push button attached to pin 33 wakes up from sleep
+// LED blinks while messsage is sent 
+// this arrangement helps to <auto-mate> and <un-mute> by button press
+//
 // written by Dr. Abhishek Ghosh, https://thecustomizewindows.com
 // released under GNU GPL 3.0
+// 
 
-
-#define BUTTON_PIN_BITMASK 0x200000000 // 2^33 in hex
+#define BUTTON_PIN_BITMASK 0x200000000 // 2^33 in hex; pin 33 for push button
 RTC_DATA_ATTR int bootCount = 0;
 
-const byte BUTTON=33; // boot button pin (built-in on ESP32)
+const byte BUTTON=0; // boot button pin (built-in on ESP32)
 const byte LED=2; // onboard LED (built-in on ESP32)
 
 #include <WiFi.h>
@@ -41,20 +44,29 @@ String urlPath = "/api/v0002/device/types/" DEVICE_TYPE "/devices/" DEVICE_ID "/
 String urlHost = ORG ".messaging.internetofthings.ibmcloud.com";
 int urlPort = 8883;
 String authHeader;
+
+void deep_sleep() {
+    printf("Sleep at %d ms\n\n", millis());
+    delay(20);
+    //esp_sleep_enable_timer_wakeup(20000 * 1000); // Deep-Sleep time in microseconds
+    esp_sleep_enable_ext0_wakeup(GPIO_NUM_33,1); //1 = High, 0 = Low 
+    esp_deep_sleep_start();
+    // Serial.println("This will never be printed");
+
+}
  
 void setup() {
- pinMode(BUTTON, INPUT_PULLUP);
- pinMode(LED, OUTPUT);
- digitalWrite(LED, LOW);
  Serial.begin(115200); Serial.println();
  delay(1000); //Take some time to open up the Serial Monitor
  //Increment boot number and print it every reboot
   ++bootCount;
-  Serial.println("Boot number: " + String(bootCount));
-  // print_wakeup_reason();
-  esp_sleep_enable_ext0_wakeup(GPIO_NUM_33,1); //1 = High, 0 = Low 
- initWifi();
- authHeader = "Authorization: Basic " + base64::encode("use-token-auth:" TOKEN) + "\r\n";
+Serial.println("Boot number: " + String(bootCount));
+ pinMode(BUTTON, INPUT_PULLUP);
+ pinMode(LED, OUTPUT);
+ digitalWrite(LED, LOW);
+
+initWifi();
+authHeader = "Authorization: Basic " + base64::encode("use-token-auth:" TOKEN) + "\r\n";
 }
 
 void doWiFiClientSecure() {
@@ -88,7 +100,6 @@ Serial.println("Got response");
   }
 Serial.println(); Serial.println("closing connection");
   client.stop();
-  deep_sleep();
 }
 
 void initWifi() {
@@ -137,17 +148,8 @@ void loop() {
    if ((unsigned long)(currentMillis - ledTurnedOnAt) >= turnOffDelay) {
      ledState = false;
      digitalWrite(LED, LOW);
+     deep_sleep(); 
    }
- }
-
-              
+ }              
 }
 
-void deep_sleep() {
-    printf("Sleep at %d ms\n\n", millis());
-    delay(20);
-    esp_sleep_enable_timer_wakeup(20000 * 1000); // Deep-Sleep time in microseconds
-    esp_deep_sleep_start();
-    Serial.println("This will never be printed");
-
-}
