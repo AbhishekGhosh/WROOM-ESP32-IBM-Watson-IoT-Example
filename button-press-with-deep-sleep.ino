@@ -1,10 +1,8 @@
-// this example uses two push buttons attached to pin 0, pin 33
-// and one LED attached to pin 2
-// push button attached to pin 0 sends message when is ESP32 is not in sleep, and after sending message puts it in to sleep
-// push button attached to pin 33 wakes up from sleep
-// LED blinks while messsage is sent 
-// this arrangement helps to <auto-mate> and <un-mute> by button press
-//
+// this example uses one push button attached to pin 33
+// push button attached to pin 33 sends message and puts it in to deep sleep
+// again pushing the pushbutton attached to pin 33 it wakes up from sleep
+// LED function kept as the this originated from my non deep-sleep code, it is not made working by code 
+
 // written by Dr. Abhishek Ghosh, https://thecustomizewindows.com
 // released under GNU GPL 3.0
 // 
@@ -12,7 +10,7 @@
 #define BUTTON_PIN_BITMASK 0x200000000 // 2^33 in hex; pin 33 for push button
 RTC_DATA_ATTR int bootCount = 0;
 
-const byte BUTTON=0; // boot button pin (built-in on ESP32)
+const byte BUTTON=33; // boot button pin (built-in on ESP32)
 const byte LED=2; // onboard LED (built-in on ESP32)
 
 #include <WiFi.h>
@@ -20,6 +18,8 @@ const byte LED=2; // onboard LED (built-in on ESP32)
 #include <HTTPClient.h>
 #include <base64.h>
 #define USE_SERIAL Serial 
+
+#define FORCE_MODE 3
  
 unsigned long buttonPushedMillis; // when button was released
 unsigned long ledTurnedOnAt; // when led was turned on
@@ -48,7 +48,7 @@ String authHeader;
 void deep_sleep() {
     printf("Sleep at %d ms\n\n", millis());
     delay(20);
-    //esp_sleep_enable_timer_wakeup(20000 * 1000); // Deep-Sleep time in microseconds
+    // esp_sleep_enable_timer_wakeup(20000 * 1000); // Deep-Sleep time in microseconds
     esp_sleep_enable_ext0_wakeup(GPIO_NUM_33,1); //1 = High, 0 = Low 
     esp_deep_sleep_start();
     // Serial.println("This will never be printed");
@@ -67,6 +67,8 @@ Serial.println("Boot number: " + String(bootCount));
 
 initWifi();
 authHeader = "Authorization: Basic " + base64::encode("use-token-auth:" TOKEN) + "\r\n";
+doWiFiClientSecure();
+loop();
 }
 
 void doWiFiClientSecure() {
@@ -147,9 +149,8 @@ void loop() {
    // okay, led on, check for now long
    if ((unsigned long)(currentMillis - ledTurnedOnAt) >= turnOffDelay) {
      ledState = false;
-     digitalWrite(LED, LOW);
-     deep_sleep(); 
+     digitalWrite(LED, LOW); 
    }
- }              
+ }
+deep_sleep();               
 }
-
