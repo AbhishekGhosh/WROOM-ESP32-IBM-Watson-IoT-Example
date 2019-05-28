@@ -1,5 +1,7 @@
-// this example will need button press twice to wake & send message
-// wakes & connects upon pressing GPIO 33 button and sends a message, then closes connection & goes to sleep
+// this example will sleep for a defined time, then wake up, connect to Wi-Fi, then upon button press 
+// will send message and sleep
+// during sleep to wake up & send message will need pressing the button twice
+// pushbutton is on GPIO 33 & LED is on GPIO 2 (ESP32 onloard LED is at 2)
 // written by Dr. Abhishek Ghosh, https://thecustomizewindows.com
 // released under GNU GPL 3.0
 
