@@ -9,6 +9,7 @@
 
 #define BUTTON_PIN_BITMASK 0x200000000 // 2^33 in hex, pin 33
 RTC_DATA_ATTR int bootCount = 0;
+#define TIME_TO_SLEEP  200       /* Time ESP32 will go to sleep (in seconds) */
 
 const byte BUTTON=33; // pin 33
 const byte LED=2; // onboard LED (built-in LED)
@@ -76,7 +77,7 @@ void setup() {
  authHeader = "Authorization: Basic " + base64::encode("use-token-auth:" TOKEN) + "\r\n";
 }
 
-void loop() {
+void anything() {
  // get the time at the start of this loop()
  unsigned long currentMillis = millis(); 
  // check the button
@@ -162,3 +163,6 @@ Serial.println(); Serial.println("closing connection");
   Serial.println("This will never be printed");
 }
 
+void loop() {
+Serial.println("Loop will never be printed");
+}
