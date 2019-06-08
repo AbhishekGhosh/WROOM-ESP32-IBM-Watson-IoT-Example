@@ -1,12 +1,26 @@
 # WROOM ESP32 IBM Watson IoT Example
 
-Example sketch with WROOM ESP32 Connecting to IBM Watson IoT Platform. WROOM ESP32 is like common modern ESP32 boards like Adafruit Feather Huzzah32, DO IT ESP32 v1 & generic. In order to use these examples, one needs to :
+This is an expanding number of projects by [The Customize Windows](https://thecustomizewindows.com) containing basic examples to advanced examples for WROOM ESP32 with IBM Watson IoT Platform. WROOM ESP32 is like common modern ESP32 boards like Adafruit Feather Huzzah32, DO IT ESP32 v1 & generic. 
 
-1. follow our [guide to setup WROOM ESP32 dev board on Windows 10](https://thecustomizewindows.com/2019/02/esp-wroom-32-how-to-setup-esp32-nodemcu-with-arduino-ide/)
-2. install PubSubClient library from Arduino IDE
-3. have IBM Cloud account
-4. one Wi-Fi hotspot with internet connection
-5. one WROOM ESP32 dev board
+## List of parts :
+
+1. Follow our [guide to setup WROOM ESP32 dev board on Windows 10](https://thecustomizewindows.com/2019/02/esp-wroom-32-how-to-setup-esp32-nodemcu-with-arduino-ide/)
+2. Install PubSubClient library from Arduino IDE
+3. Have IBM Cloud account
+4. One Wi-Fi hotspot with internet connection
+5. One WROOM ESP32 dev board (Like Adafruit Feather Huzzah32, DO IT ESP32)
+6. Few LEDs
+7. Few jumpers
+8. Breadboard
+
+## Parts for the advanced examples : 
+
+9. DHT11 sensor
+10. Pushbutton
+11. Pulse sensor
+12. Relay module
+
+## Some of the photos
 
 ![WROOM ESP32 IBM Watson IoT-Example](20190223_020730_2.gif)
 
@@ -19,3 +33,7 @@ Below image is of temperature.ino in action. Blue LED blinking as data uploaded 
 Below image is of PulseSensor/pulse-graphing.ino in action, it is graphing on IBM IoT platform dashboard widget :
 
 ![ESP32 IBM Watson IoT Pulse Sensor](https://thecustomizewindows.com/wp-content/uploads/2019/04/ESP32-Arduino-IBM-Watson-IoT-Pulse-Sensor-Amped.png)
+
+## This is an Free and Open Source Project by Abhishek Ghosh
+
+
