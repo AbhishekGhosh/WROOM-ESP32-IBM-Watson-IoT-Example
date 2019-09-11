@@ -22,7 +22,9 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 
 ## Some of the photos
 
+<center>
 ![WROOM ESP32 IBM Watson IoT-Example](20190223_020730_2.gif)
+</center>  
 
 Below image is of temperature.ino in action. Blue LED blinking as data uploaded to BlueMix. Below is simple graphing from IBM IoT platform widget :
 
