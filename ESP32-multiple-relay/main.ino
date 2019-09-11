@@ -21,7 +21,7 @@
  * 
  * Modified for ESP32 by Dr. Abhishek Ghosh, https://thecustomizewindows.com , released under Apache License v2
  * 
- * Original Author: Anthony Elder
+ * Author: Dr. Abhishek Ghosh
  * License: Apache License v2
  */
 
