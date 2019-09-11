@@ -32,15 +32,15 @@
 #include <HTTPClient.h>
 #include <SPI.h>
 
-const char* ssid = "SamsungGalaxy";
-const char* password = "fkop3288";
+const char* ssid = "change";
+const char* password = "change";
  
 //-------- Customise these values -----------
 
-#define ORG "tko2rj"
-#define DEVICE_TYPE "DevBoard"
-#define DEVICE_ID "ESP32"
-#define TOKEN "b(N4qP3@Lx!ydaoiEM"
+#define ORG "change"
+#define DEVICE_TYPE "change"
+#define DEVICE_ID "change"
+#define TOKEN "change"
 
 //-------- Customise the above values --------
 
