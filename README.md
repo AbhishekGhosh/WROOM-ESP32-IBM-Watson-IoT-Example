@@ -1,8 +1,8 @@
-# WROOM ESP32 IBM Watson IoT Example
+# ESP32 IBM Watson IoT Examples
 
 This is an expanding number of projects by [The Customize Windows](https://thecustomizewindows.com) containing basic examples to advanced examples for WROOM ESP32 with IBM Watson IoT Platform. WROOM ESP32 is like common modern ESP32 boards like Adafruit Feather Huzzah32, DO IT ESP32 v1 & generic. 
 
-## `temperature.ino` in action. The blue LED blinking as data uploaded to BlueMix. 
+### `temperature.ino` in action. The blue LED blinking as data uploaded to BlueMix
 
 <p align="center">
   <img src="20190223_020730_2.gif">
@@ -10,7 +10,7 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 
 ---
 
-## `simple graphing` from IBM IoT platform widget :
+### `simple graphing` from IBM IoT platform widget :
 
 <p align="center">
   <img src="abhishek%20ghosh%20ibm.PNG">
@@ -18,7 +18,7 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 
 ---
 
-## `PulseSensor/pulse-graphing.ino` in action, it is graphing on IBM IoT platform dashboard widget :
+### `PulseSensor/pulse-graphing.ino` in action, it is graphing on IBM IoT platform dashboard widget :
 
 
 <p align="center">
@@ -27,7 +27,7 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 
 ---
 
-## Fritzing diagram of `ESP32 multiple relay`
+### Fritzing diagram of `ESP32 multiple relay`
 
 <p align="center">
   <img src="ESP32-multiple-relay/Control%20Multiple%20AC%20Appliances%20With%20One%20ESP32%20Arduino.png">
