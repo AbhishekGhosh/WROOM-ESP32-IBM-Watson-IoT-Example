@@ -2,6 +2,8 @@
 
 This is an expanding number of projects by [The Customize Windows](https://thecustomizewindows.com) containing basic examples to advanced examples for WROOM ESP32 with IBM Watson IoT Platform. WROOM ESP32 is like common modern ESP32 boards like Adafruit Feather Huzzah32, DO IT ESP32 v1 & generic. 
 
+---
+
 ### `temperature.ino` in action. The blue LED blinking as data uploaded to BlueMix
 
 <p align="center">
