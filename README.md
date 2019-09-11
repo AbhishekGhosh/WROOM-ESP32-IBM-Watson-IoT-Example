@@ -26,8 +26,9 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 
 Below image is of temperature.ino in action. Blue LED blinking as data uploaded to BlueMix. Below is simple graphing from IBM IoT platform widget :
 
-
+<center>
 ![WROOM ESP32 IBM Watson IoT](abhishek%20ghosh%20ibm.PNG)
+</center>  
 
 
 Below image is of PulseSensor/pulse-graphing.ino in action, it is graphing on IBM IoT platform dashboard widget :
