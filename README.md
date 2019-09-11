@@ -34,6 +34,10 @@ Below image is of PulseSensor/pulse-graphing.ino in action, it is graphing on IB
 
 ![ESP32 IBM Watson IoT Pulse Sensor](https://thecustomizewindows.com/wp-content/uploads/2019/04/ESP32-Arduino-IBM-Watson-IoT-Pulse-Sensor-Amped.png)
 
+Below is Fritzing diagdram of ESP32 multiple relay :
+
+![ESP32 Multiple Relays](https://github.com/AbhishekGhosh/WROOM-ESP32-IBM-Watson-IoT-Example/blob/master/ESP32-multiple-relay/Control%20Multiple%20AC%20Appliances%20With%20One%20ESP32%20Arduino.png)
+
 ## This is an Free and Open Source Project by Abhishek Ghosh
 
 
