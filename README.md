@@ -56,6 +56,7 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 10. Pushbutton
 11. Pulse sensor
 12. Relay module
+12. Smartwatch with BLE
 
 ---
 
