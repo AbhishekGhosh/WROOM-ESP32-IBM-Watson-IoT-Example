@@ -1,5 +1,5 @@
 // Description given here :
-//  https://thecustomizewindows.com/2020/04/detect-smartwatch-with-esp32-and-ibm-watson-iot/
+//  https://thecustomizewindows.com/2020/04/detect-smartwatch-with-esp32-on-ibm-watson-iot-widget/
 // Copyright Dr. Abhishek Ghosh
 // https://thecustomizewindows.com
 // copy from the below line
