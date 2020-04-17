@@ -35,6 +35,13 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
   <img src="ESP32-multiple-relay/Control%20Multiple%20AC%20Appliances%20With%20One%20ESP32%20Arduino.png">
 </p>
 
+### Detect Smartwatch on IBM Watson IoT Widget
+
+<p align="center">
+  <img src="https://thecustomizewindows.com/wp-content/uploads/2020/04/Detect-Smartwatch-With-ESP32-and-IBM-Watson-IoT.png">
+</p>
+
+
 ---
 
 ## List of parts :
