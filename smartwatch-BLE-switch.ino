@@ -1,3 +1,10 @@
+// Description given here :
+// https://thecustomizewindows.com/2020/03/detect-samsung-smartwatch-ble-and-trigger-ibm-watson-iot-event/
+// Copyright Dr. Abhishek Ghosh
+// https://thecustomizewindows.com
+// copy from the below line
+
+
 #include "BLEDevice.h"
 #include <WiFi.h>
 #include <WiFiMulti.h>
