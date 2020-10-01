@@ -42,6 +42,12 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 </p>
 
 
+### Pulse oximetry on IBM Watson IoT Widget
+
+<p align="center">
+  <img src="https://github.com/AbhishekGhosh/WROOM-ESP32-IBM-Watson-IoT-Example/blob/master/PulseSensor/IBM%20spo2.PNG">
+</p>
+
 ---
 
 ## List of parts :
@@ -59,12 +65,12 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 
 ## Parts for the advanced examples : 
 
-9. DHT11 sensor
+9. DHT11 sensor for temp, humidity 
 10. Pushbutton
-11. Pulse sensor
-12. Relay module
-12. Smartwatch with BLE
-
+11. Pulse sensor for pulse
+12. Relay module for control of AC appliances
+12. Smartwatch with BLE for detecting presence 
+13. MAX30102 module for pulse oximetry 
 ---
 
 ### This is an Free and Open Source Project by Abhishek Ghosh
