@@ -42,7 +42,7 @@ This is an expanding number of projects by [The Customize Windows](https://thecu
 </p>
 
 
-### Pulse oximetry on IBM Watson IoT Widget
+### `pulse-oximeter.ino` on IBM Watson IoT Widget
 
 <p align="center">
   <img src="https://github.com/AbhishekGhosh/WROOM-ESP32-IBM-Watson-IoT-Example/blob/master/PulseSensor/IBM%20spo2.PNG">
